@@ -1,6 +1,6 @@
 cask "veil" do
-  version "0.1.4"
-  sha256 "758095a3a3cc0534ae0415bda7e982e8c42e8819e519d4064bf634dfa0acff56"
+  version "0.2.0"
+  sha256 "a66f3a51ae72a09582f39096bf32879b01570176666a48281f4920d57b43b62a"
 
   url "https://github.com/roxvihaan/Veil/releases/download/v#{version}/Veil-#{version}-arm64.dmg"
   name "Veil Terminal"
@@ -11,7 +11,7 @@ cask "veil" do
   depends_on macos: :monterey
 
   app "Veil Terminal.app"
-  binary "#{appdir}/Veil Terminal.app/Contents/Resources/app/bin/veil"
+  binary "#{appdir}/Veil Terminal.app/Contents/Resources/bin/veil"
 
   caveats <<~EOS
     Veil is ad-hoc signed, not Apple-notarized. macOS may block its first launch.
