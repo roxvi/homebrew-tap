@@ -1,6 +1,6 @@
 cask "veil" do
-  version "0.2.0"
-  sha256 "a66f3a51ae72a09582f39096bf32879b01570176666a48281f4920d57b43b62a"
+  version "0.2.1"
+  sha256 "bf2a7fa8fd7d656eaae8e9b55112607752658bf5faed067d62b951aada518ff2"
 
   url "https://github.com/roxvihaan/Veil/releases/download/v#{version}/Veil-#{version}-arm64.dmg"
   name "Veil Terminal"
