@@ -20,3 +20,20 @@ brew upgrade --cask roxvihaan/tap/veil
 ```
 
 Uninstall with `brew uninstall --cask roxvihaan/tap/veil`. Your Veil config is preserved. This cask does not install the optional Neofetch wrapper or modify shell startup files.
+
+## Archaive
+
+```sh
+brew install --cask roxvi/tap/archaive
+```
+
+Installs [Archaive](https://github.com/roxvi/summrs), a menu bar app with a keep-awake shortcut, lid-triggered brightness dimming, and hotspot fallback. Requires Apple Silicon and macOS 13 or later.
+
+The app includes optional one-time administrator setup for password-free keep-awake toggles. Custom hotspot passwords are stored in Keychain. The build is ad-hoc signed, not notarized; the cask retains quarantine and does not disable Gatekeeper.
+
+Quit Archaive before upgrading or uninstalling so it can restore sleep and brightness. If you enabled password-free access and no longer want it, remove it from Archaive's menu before uninstalling. Uninstalling the cask preserves preferences, Keychain entries, and that optional permission.
+
+```sh
+brew upgrade --cask roxvi/tap/archaive
+brew uninstall --cask roxvi/tap/archaive
+```
