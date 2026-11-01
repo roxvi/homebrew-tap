@@ -24,18 +24,18 @@ Uninstall with `brew uninstall --cask roxvihaan/tap/veil`. Your Veil config is p
 ## Archaive
 
 ```sh
-HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" brew install --cask roxvi/tap/archaive
+brew install --cask roxvi/tap/archaive
 ```
 
-The release repository is private. Authenticate `gh` with an account that has access first. The token is passed through the environment, not saved in the cask.
+The release repository and DMG are public. No GitHub login or token is required.
 
-Installs [Archaive](https://github.com/roxvi/summrs), a menu bar app with a keep-awake shortcut, lid-triggered brightness dimming, and hotspot fallback. Requires Apple Silicon and macOS 13 or later.
+Installs [Archaive](https://github.com/roxvi/arachive), a menu bar app with a keep-awake shortcut, lid-triggered brightness dimming, and hotspot fallback. Requires Apple Silicon and macOS 13 or later. You can also download the DMG from [Releases](https://github.com/roxvi/arachive/releases) and drag Archaive onto Applications.
 
 The app includes optional one-time administrator setup for password-free keep-awake toggles. Custom hotspot passwords are stored in Keychain. The build is ad-hoc signed, not notarized; the cask retains quarantine and does not disable Gatekeeper.
 
 Quit Archaive before upgrading or uninstalling so it can restore sleep and brightness. If you enabled password-free access and no longer want it, remove it from Archaive's menu before uninstalling. Uninstalling the cask preserves preferences, Keychain entries, and that optional permission.
 
 ```sh
-HOMEBREW_GITHUB_API_TOKEN="$(gh auth token)" brew upgrade --cask roxvi/tap/archaive
+brew upgrade --cask roxvi/tap/archaive
 brew uninstall --cask roxvi/tap/archaive
 ```
