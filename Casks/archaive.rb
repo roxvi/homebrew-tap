@@ -1,6 +1,6 @@
 cask "archaive" do
-  version "1.1.1"
-  sha256 "19659ef2ec5b88168e0701624de7ca06fc016ff6881d7494c41f5eb6aacac6e6"
+  version "1.2.0"
+  sha256 "dda1c08d75564c0108b2d9427b7c373e876571752f225b6f494952dc8f859c8e"
 
   url "https://github.com/roxvi/arachive/releases/download/v#{version}/Archaive-#{version}-arm64.dmg"
   name "Archaive"
