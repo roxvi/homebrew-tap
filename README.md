@@ -39,3 +39,23 @@ Quit Archaive before upgrading or uninstalling so it can restore sleep and brigh
 brew upgrade --cask roxvi/tap/archaive
 brew uninstall --cask roxvi/tap/archaive
 ```
+
+## OpenNexus
+
+```sh
+brew trust --cask roxvi/tap/opennexus
+brew install --cask roxvi/tap/opennexus
+```
+
+OpenNexus is a native Rust system-monitoring and hardware dashboard with live CPU/memory/process views, display layouts, local profiles, weather, world clocks and an image gallery. Requires Apple Silicon and macOS 12 or newer; tested on macOS 26.5.1. Original device drivers, fan writes, firmware and hosted cloud features are not implemented.
+
+The DMG is public and requires no GitHub login. [Download OpenNexus](https://github.com/roxvi/homebrew-tap/releases/tag/opennexus-v0.1.0) and drag the app onto Applications, or use the cask above. The source repository remains private.
+
+The app is ad-hoc signed, not Apple-notarized. The cask retains quarantine and does not disable Gatekeeper. If macOS blocks first launch and you trust this app, follow [Apple's per-app approval instructions](https://support.apple.com/en-us/102445).
+
+Quit OpenNexus before upgrading or uninstalling. Settings, local profiles and display layouts are preserved on uninstall.
+
+```sh
+brew upgrade --cask roxvi/tap/opennexus
+brew uninstall --cask roxvi/tap/opennexus
+```
