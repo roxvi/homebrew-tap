@@ -1,6 +1,6 @@
 cask "nexus-rust" do
-  version "0.2.0"
-  sha256 "a739321b0e51990c7d5ed9ee414a55373ee136630fc9b850b8e6b04a087d7b81"
+  version "0.2.1"
+  sha256 "40b1582ec56dff20a4f90e9e159879fafeb55bfa3e84e7a508bd58806e93d45e"
 
   url "https://github.com/roxvi/homebrew-tap/releases/download/nexus-rust-v#{version}/NexusRust-#{version}-arm64.dmg"
   name "Nexus Rust"
