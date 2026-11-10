@@ -40,22 +40,23 @@ brew upgrade --cask roxvi/tap/archaive
 brew uninstall --cask roxvi/tap/archaive
 ```
 
-## OpenNexus
+## Nexus Rust
 
 ```sh
-brew trust --cask roxvi/tap/opennexus
-brew install --cask roxvi/tap/opennexus
+brew trust --cask roxvi/tap/nexus-rust
+brew install --cask roxvi/tap/nexus-rust
 ```
 
-OpenNexus is a native Rust system-monitoring and hardware dashboard with live CPU/memory/process views, display layouts, local profiles, weather, world clocks and an image gallery. Requires Apple Silicon and macOS 12 or newer; tested on macOS 26.5.1. Original device drivers, fan writes, firmware and hosted cloud features are not implemented.
+Nexus Rust (previously OpenNexus) is a native Rust system-monitoring and hardware dashboard with live CPU/memory/process views, display layouts, local profiles, weather, world clocks and an image gallery. Version 0.2.0 adds native case previews with catalogue search, measured panels and cut-outs, rotate/pan/zoom controls, three offline HYTE cases and saved selections. Cases without detailed geometry have a labelled dimensions-only outline. Requires Apple Silicon and macOS 12 or newer; tested on macOS 26.5.1. Original device drivers, fan writes, firmware and hosted cloud features are not implemented.
 
-The DMG is public and requires no GitHub login. [Download OpenNexus](https://github.com/roxvi/homebrew-tap/releases/tag/opennexus-v0.1.0) and drag the app onto Applications, or use the cask above. The source repository remains private.
+The DMG is public and requires no GitHub login. [Download Nexus Rust 0.2.0](https://github.com/roxvi/homebrew-tap/releases/tag/nexus-rust-v0.2.0) and drag the app onto Applications, or use the cask above. The source repository remains private.
 
 The app is ad-hoc signed, not Apple-notarized. The cask retains quarantine and does not disable Gatekeeper. If macOS blocks first launch and you trust this app, follow [Apple's per-app approval instructions](https://support.apple.com/en-us/102445).
 
-Quit OpenNexus before upgrading or uninstalling. Settings, local profiles and display layouts are preserved on uninstall.
+Quit OpenNexus/Nexus Rust before upgrading or uninstalling. The old `opennexus` cask token redirects to `nexus-rust` through Homebrew's cask rename mapping. Settings, local profiles and display layouts keep their existing local directory and are preserved on uninstall.
 
 ```sh
-brew upgrade --cask roxvi/tap/opennexus
-brew uninstall --cask roxvi/tap/opennexus
+brew update
+brew upgrade --cask roxvi/tap/nexus-rust
+brew uninstall --cask roxvi/tap/nexus-rust
 ```
